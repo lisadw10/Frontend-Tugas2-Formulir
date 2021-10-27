@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir</title>
+    <script src="./formulir.js"></script>
+</head>
+<body>
+    <form name="form" oninput="tampil()">
+        <label for="nama">Nama</label><br>
+        <input type="text" id="nama" name="nama" placeholder="Isikan Nama Anda disini.."><br><br>
+
+        <label for="email">Email</label><br>
+        <input type="text" name="email" id="email" placeholder="Isikan Email Anda disini.."><br><br>
+
+        <label for="Radio">Jenis Kelamin</label><br>
+        <input type="radio" id="pria" name="jenisKelamin" value="Pria" checked>
+        <label for="pria">Pria</label><br>
+        <input type="radio" id="wanita" name="jenisKelamin" value="Wanita">
+        <label for="wanita">Wanita</label><br><br>
+
+
+        <label for="agama">Agama</label><br>
+        <select id="agama" name="agama">
+            <option value="">pilih</option>
+            <option value="Islam">Islam</option>
+            <option value="Hindu">Hindu</option>
+            <option value="Budha">Buddha</option>
+            <option value="Kristen">Kristen</option>
+            <option value="Konghucu">Konghucu</option>
+        </select><br><br>
+        <label for="alamat">Alamat</label><br>
+        <textarea name="alamat" cols="27" rows="2" placeholder="Isikan Alamat Anda disini.."></textarea><br><br>
+        <input type="submit"  value="Kirim">
+    </form> <br>
+
+    <section id="tampil">
+
+    </section>
+</body>
+</html>
